@@ -8,6 +8,7 @@ function App() {
     {rowNumber:1, rowDescription:'Feed puppy',rowAssigned:'User one'},
     {rowNumber:2, rowDescription: 'Water plants',rowAssigned:'User Two'},
     {rowNumber:3, rowDescription: 'Make dinner',rowAssigned:'User one'},
+    {rowNumber:4, rowDescription: 'charge phone battery',rowAssigned:'User one'},
 ]
   return (
     <div className="mt-5 container">
