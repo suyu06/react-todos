@@ -11,6 +11,7 @@ function TodoTable(props) {
         </tr>
       </thead>
       <tbody>
+        {/* .map to map the each element of "todos" list to the new "todo", then render it as the data of TodoRowItem*/}
            {props.todos.map(todo =>(
             <TodoRowItem
             rowNumber={todo.rowNumber}
