@@ -22,17 +22,22 @@ function App() {
   ]);
 
   const addTodo = (description, assigned) => {
+    let rowNumber = 0;
     if (todos.length > 0) {
+      // find the last todo in the list
+      rowNumber = todos[todos.length - 1].rowNumber + 1;
+    }else{
+      rowNumber =1;
+    }
       const newTodo = {
-        rowNumber: todos.length + 1,
+        rowNumber: rowNumber,
         rowDescription: description,
-        rowAssigned: assigned
+        rowAssigned: assigned,
       };
       setTodos((todos) => [...todos, newTodo]);
       // todos.push(newTodo);
       // console.log(todos);
-    }
-  };
+    } 
 
   return (
     <div className="mt-5 container">
