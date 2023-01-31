@@ -1,4 +1,4 @@
-class TodoModel {
+ class TodoModel {
     
   rowNumber: number;
   rowDescription: string;
@@ -10,3 +10,4 @@ class TodoModel {
     this.rowAssigned = rowAssigned;
   }
 }
+export default TodoModel;

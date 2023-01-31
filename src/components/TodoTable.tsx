@@ -1,12 +1,8 @@
 import React from 'react';
 import TodoRowItem from "./TodoRowItem"
+import TodoModel from "../models/TodoModel"
 
-function TodoTable(props:{
-  rowNumber: number;
-  rowDescription: string;
-  rowAssigned: string;
-  deleteTodo: Function;
-}) {
+function TodoTable(props:{todos: TodoModel[], deleteTodo:Function}) {
   return (
     <table className="table table-hover">
       <thead>
