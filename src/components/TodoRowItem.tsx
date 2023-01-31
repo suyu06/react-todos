@@ -1,6 +1,11 @@
 import React from "react";
 
-function TodoRowItem(props) {
+function TodoRowItem(props: {
+  rowNumber: number;
+  rowDescription: string;
+  rowAssigned: string;
+  deleteTodo: Function;
+}) {
   //   const rowNumber = 1;
   //   const rowDescription = "Feed dog";
   //   const rowAssigned = "Eric";
