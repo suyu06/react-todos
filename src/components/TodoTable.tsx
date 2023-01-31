@@ -1,7 +1,12 @@
 import React from 'react';
 import TodoRowItem from "./TodoRowItem"
 
-function TodoTable(props) {
+function TodoTable(props:{
+  rowNumber: number;
+  rowDescription: string;
+  rowAssigned: string;
+  deleteTodo: Function;
+}) {
   return (
     <table className="table table-hover">
       <thead>
